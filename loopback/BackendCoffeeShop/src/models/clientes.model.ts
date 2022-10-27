@@ -1,4 +1,5 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {TipoDocumento} from './tipo-documento.model';
 
 @model()
 export class Clientes extends Entity {
@@ -44,11 +45,6 @@ export class Clientes extends Entity {
     required: true,
   })
   clave: string;
-
-  @property({
-    type: 'string',
-  })
-  id_tipoDocumento?: string;
 
   constructor(data?: Partial<Clientes>) {
     super(data);

@@ -16,11 +16,8 @@ export class TipoDocumento extends Entity {
   })
   tipo: string;
 
-  @belongsTo(() => Clientes, {name: 'TipoDocumento'})
+  @belongsTo(() => Clientes, {name: 'TipoDocumentoCliente'})
   id_cliente: string;
-
-  @hasMany(() => Clientes, {keyTo: 'id_tipoDocumento'})
-  tipoDocumentoClientes: Clientes[];
 
   constructor(data?: Partial<TipoDocumento>) {
     super(data);

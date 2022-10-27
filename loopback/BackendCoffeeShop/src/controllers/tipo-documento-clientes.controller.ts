@@ -33,6 +33,6 @@ export class TipoDocumentoClientesController {
   async getClientes(
     @param.path.string('id') id: typeof TipoDocumento.prototype.id_tipoDocumento,
   ): Promise<Clientes> {
-    return this.tipoDocumentoRepository.TipoDocumento(id);
+    return this.tipoDocumentoRepository.TipoDocumentoCliente(id);
   }
 }

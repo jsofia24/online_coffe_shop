@@ -14,10 +14,14 @@ export class TipoDocumentoRepository extends DefaultCrudRepository<
 
   public readonly tipoDocumentoClientes: HasManyRepositoryFactory<Clientes, typeof TipoDocumento.prototype.id_tipoDocumento>;
 
+  public readonly TipoDocumentoCliente: BelongsToAccessor<Clientes, typeof TipoDocumento.prototype.id_tipoDocumento>;
+
   constructor(
     @inject('datasources.mongodb') dataSource: MongodbDataSource, @repository.getter('ClientesRepository') protected clientesRepositoryGetter: Getter<ClientesRepository>,
   ) {
     super(TipoDocumento, dataSource);
+    this.TipoDocumentoCliente = this.createBelongsToAccessorFor('TipoDocumentoCliente', clientesRepositoryGetter,);
+    this.registerInclusionResolver('TipoDocumentoCliente', this.TipoDocumentoCliente.inclusionResolver);
     this.tipoDocumentoClientes = this.createHasManyRepositoryFactoryFor('tipoDocumentoClientes', clientesRepositoryGetter,);
     this.registerInclusionResolver('tipoDocumentoClientes', this.tipoDocumentoClientes.inclusionResolver);
     this.TipoDocumento = this.createBelongsToAccessorFor('TipoDocumento', clientesRepositoryGetter,);
