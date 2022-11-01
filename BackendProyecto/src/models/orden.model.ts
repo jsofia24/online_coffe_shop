@@ -1,4 +1,6 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, belongsTo, hasMany} from '@loopback/repository';
+import {Cliente} from './cliente.model';
+import {OrdenDetalle} from './orden-detalle.model';
 
 @model()
 export class Orden extends Entity {
@@ -9,12 +11,11 @@ export class Orden extends Entity {
   })
   id?: string;
 
-  @property({
-    type: 'string',
-    required: true,
-  })
+  @belongsTo(() => Cliente)
   clienteId: string;
 
+  @hasMany(() => OrdenDetalle)
+  ordenDetalles: OrdenDetalle[];
 
   constructor(data?: Partial<Orden>) {
     super(data);

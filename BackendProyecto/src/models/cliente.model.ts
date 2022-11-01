@@ -1,4 +1,6 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, belongsTo, hasMany} from '@loopback/repository';
+import {Lugar} from './lugar.model';
+import {Orden} from './orden.model';
 
 @model()
 export class Cliente extends Entity {
@@ -8,13 +10,6 @@ export class Cliente extends Entity {
     generated: true,
   })
   id?: string;
-
-  @property({
-    type: 'string',
-    required: true,
-  })
-  lugarId: string;
-
   @property({
     type: 'string',
     required: true,
@@ -64,6 +59,11 @@ export class Cliente extends Entity {
   })
   metodoPago: string[];
 
+  @belongsTo(() => Lugar)
+  lugarId: string;
+
+  @hasMany(() => Orden)
+  ordenes: Orden[];
 
   constructor(data?: Partial<Cliente>) {
     super(data);
