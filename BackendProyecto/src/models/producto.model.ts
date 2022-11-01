@@ -1,6 +1,4 @@
-import {Entity, model, property, belongsTo, hasMany} from '@loopback/repository';
-import {Proveedor} from './proveedor.model';
-import {OrdenDetalle} from './orden-detalle.model';
+import {Entity, model, property} from '@loopback/repository';
 
 @model()
 export class Producto extends Entity {
@@ -10,6 +8,13 @@ export class Producto extends Entity {
     generated: true,
   })
   id?: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  proveedorId: string;
+
   @property({
     type: 'string',
     required: true,
@@ -17,11 +22,10 @@ export class Producto extends Entity {
   nombre: string;
 
   @property({
-    type: 'array',
-    itemType: 'string',
+    type: 'string',
     required: true,
   })
-  marca: string[];
+  marca: string;
 
   @property({
     type: 'string',
@@ -30,25 +34,22 @@ export class Producto extends Entity {
   descripcion: string;
 
   @property({
-    type: 'array',
-    itemType: 'string',
+    type: 'string',
     required: true,
   })
-  sabor: string[];
+  sabor: string;
 
   @property({
-    type: 'array',
-    itemType: 'string',
+    type: 'string',
     required: true,
   })
-  tostion: string[];
+  tostion: string;
 
   @property({
-    type: 'array',
-    itemType: 'string',
+    type: 'string',
     required: true,
   })
-  tipo: string[];
+  tipo: string;
 
   @property({
     type: 'string',
@@ -74,11 +75,6 @@ export class Producto extends Entity {
   })
   imagen: string;
 
-  @belongsTo(() => Proveedor)
-  proveedorId: string;
-
-  @hasMany(() => OrdenDetalle)
-  ordenDetalles: OrdenDetalle[];
 
   constructor(data?: Partial<Producto>) {
     super(data);
