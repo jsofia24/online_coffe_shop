@@ -42,22 +42,28 @@ export class Cliente extends Entity {
 
   @property({
     type: 'string',
-    required: true,
+    required: false,
   })
-  contrasena: string;
+  clave: string;
 
   @property({
     type: 'string',
-    required: true,
+    required: false,
   })
   direccion: string;
 
   @property({
     type: 'array',
     itemType: 'string',
-    required: true,
+    required: false,
   })
   metodoPago: string[];
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  rol: string;
 
   @belongsTo(() => Lugar)
   lugarId: string;
