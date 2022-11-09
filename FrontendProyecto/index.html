@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JuanitoValdez</title>
+    <link rel="stylesheet" href="./recursos/estilos.css">
+    <script src="./recursos/funciones.js"></script>
 </head>
+
 <body>
     <h1>
-        Bienvenido 
+        Bienvenido
     </h1>
     <h2>Encuentra aquí el mejor café orgánico Colombiano</h2>
     <fieldset>
         <legend>Destacados de la semana</legend>
         <input type="text" placeholder="Buscar">
-        <input type="button">
+        <input type="button" value="Aceptar" onclick="cambiarFondo()">
+        <h4>Tipología</h4>
+        <input type="radio" name="tipo">Grano
+        <input type="radio" name="tipo">Molido
+        <input type="radio" name="tipo">Soluble
+        <h4>Sabor</h4>
+        <input type="checkbox" name="CheckBox para filtros" id="check1">Chocolate
+        <input type="checkbox" name="CheckBox para filtros" id="check1">Cítrico
+        <input type="checkbox" name="CheckBox para filtros" id="check1">Dulce
+        <input type="checkbox" name="CheckBox para filtros" id="check1">Especias
+        <input type="checkbox" name="CheckBox para filtros" id="check1">Floral
+        <input type="checkbox" name="CheckBox para filtros" id="check1">Frutal
+        <input type="checkbox" name="CheckBox para filtros" id="check1">Frutos secos
     </fieldset>
+    <br>
+    <fieldset>
+        <div>
+            <h2>Regiones Cafeteras en Colombia</h2>
+        </div>
+        <br>
+        <div><img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/06/f5/f9/finca-el-ocaso-salento.jpg"
+                alt="Finca_cafetera"></div>
+    </fieldset>
+    <br>
+    <a href="https://comprocafedecolombia.com/" >Compra Cafe Colombiano</a>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Características del café</legend>
+        <table style="text-align: center;">
+            <thead>
+                <tr>
+                    <th>Características</th>
+                    <th>Café Arábica</th>
+                    <th>Café Robusta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cromosomas (2n)</td>
+                    <td>44</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Tiempo que tarda desde la flor hasta la cereza madura</td>
+                    <td>9 meses</td>
+                    <td>10 - 11 meses</td>
+                </tr>
+                <tr>
+                    <td>Temperatura óptima media</td>
+                    <td>15 - 24°C</td>
+                    <td>24 - 30°C</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </fieldset>
+
 </body>
+
 </html>
