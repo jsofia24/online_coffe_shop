@@ -28,6 +28,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	background-color: #DDBC95;
+	background-image: url("../img/Parafondo.JPG");
+	background-size: cover;
 }
 
 h1,
@@ -612,6 +614,7 @@ ol {
 	padding-left: 40px;
 	padding-top: 10px;
 	padding-bottom: 12px;
+	background-color: #c1997b;
 }
 
 .hero__categories ul li {
@@ -642,13 +645,15 @@ ol {
 
 .hero__search__form form .hero__search__categories {
 	width: 30%;
-	float: left;
-	font-size: 16px;
-	color: #1c1c1c;
-	font-weight: 700;
-	padding-left: 18px;
-	padding-top: 11px;
-	position: relative;
+    float: left;
+    font-size: 17px;
+    color: #1c1c1c;
+    font-weight: 700;
+    padding-left: 18px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    position: static;
+    background-color: #b38867;
 }
 
 .hero__search__form form .hero__search__categories:after {
@@ -2284,8 +2289,9 @@ ol {
 }
 
 .blog__item__text ul li {
-	font-size: 16px;
-	color: #b2b2b2;
+	font-size: 20px;
+    font-weight: 600;
+	color: #894848;
 	list-style: none;
 	display: inline-block;
 	margin-right: 15px;
@@ -2608,7 +2614,7 @@ ol {
 -----------------------*/
 
 .footer {
-	background: #F3F6FA;
+	background: #c99e79;
 	padding-top: 70px;
 	padding-bottom: 0;
 }
@@ -3463,6 +3469,6 @@ ol {
 .logo{
 	color: #626D71;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: bolder;
 	filter: drop-shadow(5px 5px 20px negro);
 }

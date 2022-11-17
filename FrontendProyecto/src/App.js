@@ -678,7 +678,7 @@ class App extends React.Component {
                       </div>
                       <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
                           <div class="footer__widget">
-                              <h6>Useful Links</h6>
+                              <h6>Links de Utilidad</h6>
                               <ul>
                                   <li><a href="#">Sobre Nosotros</a></li>
                                   <li><a href="#">Sobre nuestra Tienda</a></li>
