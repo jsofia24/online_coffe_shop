@@ -7,6 +7,7 @@ import {
       Redirect,
     } from "react-router-dom";
 import Home from './components/MainPage';
+import Tienda2 from './components/tienda/tienda';
 import Tienda from './components/TiendaPage';
 
 class App extends React.Component {
@@ -26,6 +27,11 @@ class App extends React.Component {
                       with exact path "/about", in component 
                       props we passes the imported component*/}
                       <Route path="/tienda" component={Tienda} />
+
+                      {/* This route is for about component 
+                      with exact path "/about", in component 
+                      props we passes the imported component*/}
+                      <Route path="/tienda2" component={Tienda2} />
                         
                         
                       {/* If any route mismatches the upper 

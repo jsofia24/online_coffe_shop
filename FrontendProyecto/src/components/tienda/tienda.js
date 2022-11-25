@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 
-export default class Tienda extends React.Component {
+export default class Tienda2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
