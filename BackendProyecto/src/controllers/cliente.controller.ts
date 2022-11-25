@@ -89,6 +89,9 @@ export class ClienteController {
     .then((data:any)=>{
       console.log(data);
     })
+    .catch(() => {
+      console.log("NO FUNCIONA")
+    })
     return c;
   }
 

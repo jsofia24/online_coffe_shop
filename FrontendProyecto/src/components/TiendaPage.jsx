@@ -28,7 +28,7 @@ const Tienda = () => {
                     </ul>
                 </div>
                 <div class="header__top__right__auth">
-                    <Link to="/"><i class="fa fa-user"></i> Login</Link>
+                    <Link to="/login"><i class="fa fa-user"></i> Login</Link>
                 </div>
             </div>
             <nav class="humberger__menu__nav mobile-menu">
@@ -92,7 +92,7 @@ const Tienda = () => {
                                     </ul>
                                 </div>
                                 <div class="header__top__right__auth">
-                                    <Link to="/"><i class="fa fa-user"></i> Login</Link>
+                                    <Link to="/login"><i class="fa fa-user"></i> Login</Link>
                                 </div>
                             </div>
                         </div>
@@ -189,14 +189,14 @@ const Tienda = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="hero__item set-bg" data-setbg="assets/img/hero/Cafeina2.jpg">
+                        {/* <div class="hero__item set-bg" data-setbg="assets/img/hero/Cafeina2.jpg">
                             <div class="hero__text">
                                 <span>Lo Mejor de Colombia</span>
                                 <h2>CAFE<br />100% Organico</h2>
                                 <p>Entregas Gratuitas por Compras al Juanito clavo un clavito</p>
                                 <Link to="/" class="primary-btn">COMPRAR AHORA</Link>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

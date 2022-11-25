@@ -28,11 +28,11 @@ const Home = () => {
                     </ul>
                 </div>
                 <div class="header__top__right__auth">
-                    <Link to="/"><i class="fa fa-user"></i> Login</Link>
+                    <Link to="/login"><i class="fa fa-user"></i> Login</Link>
                 </div>
             </div>
             <nav class="humberger__menu__nav mobile-menu">
-                <ul>
+                {/* <ul>
                     <li class="active"><Link to="/">Inicio</Link></li>
                     <li><Link to="/">Tienda</Link></li>
                     <li><Link to="/">Paginas</Link>
@@ -45,7 +45,7 @@ const Home = () => {
                     </li>
                     <li><Link to="/">Nosotros</Link></li>
                     <li><Link to="/">Contacto</Link></li>
-                </ul>
+                </ul> */}
             </nav>
             <div id="mobile-menu-wrap"></div>
             <div class="header__top__right__social">
@@ -92,7 +92,7 @@ const Home = () => {
                                     </ul>
                                 </div>
                                 <div class="header__top__right__auth">
-                                    <Link to="/"><i class="fa fa-user"></i> Login</Link>
+                                    <Link to="/login"><i class="fa fa-user"></i> Login</Link>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ const Home = () => {
                     </div>
                     <div class="col-lg-6">
                         <nav class="header__menu">
-                            <ul>
+                            {/* <ul>
                             <li class="active"><Link to="/">Inicio</Link></li>
                             <li><Link to="/tienda">Tienda</Link></li>
                             <li><Link to="/">Paginas</Link>
@@ -121,7 +121,7 @@ const Home = () => {
                                 </li>
                                 <li><Link to="/">Nosotros</Link></li>
                                 <li><Link to="/">Contacto</Link></li>
-                            </ul>
+                            </ul> */}
                         </nav>
                     </div>
                     <div class="col-lg-3">
@@ -383,7 +383,7 @@ const Home = () => {
         <div class="banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    {/* <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="banner__pic">
                             <img src="assets/img/banner/banner-1.jpg" alt="" />
                         </div>
@@ -392,7 +392,7 @@ const Home = () => {
                         <div class="banner__pic">
                             <img src="assets/img/banner/banner-2.jpg" alt="" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
@@ -406,8 +406,8 @@ const Home = () => {
                             <div class="latest-product__slider owl-carousel">
                                 <div class="latest-prdouct__slider__item">
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-1.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/cb-9.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -415,8 +415,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-2.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/ccn-10.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -424,8 +424,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-3.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/jv-11.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -435,8 +435,8 @@ const Home = () => {
                                 </div>
                                 <div class="latest-prdouct__slider__item">
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-1.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/jvm-12.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -444,8 +444,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-2.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/vo-1.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -453,8 +453,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-3.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/vodr-2.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -471,8 +471,8 @@ const Home = () => {
                             <div class="latest-product__slider owl-carousel">
                                 <div class="latest-prdouct__slider__item">
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-1.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/vocb-3.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -480,8 +480,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-2.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/oma-4.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -489,8 +489,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-3.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/ap-5.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -500,8 +500,8 @@ const Home = () => {
                                 </div>
                                 <div class="latest-prdouct__slider__item">
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-1.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/cc-6.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -509,8 +509,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-2.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/cm-7.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -518,8 +518,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-3.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/cq-8.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -536,8 +536,8 @@ const Home = () => {
                             <div class="latest-product__slider owl-carousel">
                                 <div class="latest-prdouct__slider__item">
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-1.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/ap-5.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -545,8 +545,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-2.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/cc-6.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -554,8 +554,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-3.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/cm-7.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -565,8 +565,8 @@ const Home = () => {
                                 </div>
                                 <div class="latest-prdouct__slider__item">
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-1.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/cq-8.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -574,8 +574,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-2.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/cb-9.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -583,8 +583,8 @@ const Home = () => {
                                         </div>
                                     </Link>
                                     <Link to="/" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="assets/img/latest-product/lp-3.jpg" alt="" />
+                                        <div class="latest-product__item__pic" background-position="center center">
+                                            <img src="assets/img/imcafe/ccn-10.jpg" alt="" />
                                         </div>
                                         <div class="latest-product__item__text">
                                             <h6>Crab Pool Security</h6>
@@ -612,45 +612,45 @@ const Home = () => {
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="blog__item">
                             <div class="blog__item__pic">
-                                <img src="assets/img/blog/blog-1.jpg" alt="" />
+                                <img src="assets/img/imcafe/ccn-10.jpg" alt="" />
                             </div>
                             <div class="blog__item__text">
                                 <ul>
-                                    <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                    <li><i class="fa fa-comment-o"></i> 5</li>
+                                    <li><i class="fa fa-calendar-o"></i> Mayo 4,2019</li>
+                                    <li><i class="fa fa-comment-o"></i> 6</li>
                                 </ul>
-                                <h5><Link to="/">Cooking tips make cooking simple</Link></h5>
-                                <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                                <h5><Link to="/">Un gusto para todos</Link></h5>
+                                <p>Un cafe para todo momento que te atrae con sus buenos recuerdos. </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="blog__item">
                             <div class="blog__item__pic">
-                                <img src="assets/img/blog/blog-2.jpg" alt="" />
+                                <img src="assets/img/imcafe/cm-7.jpg" alt="" />
                             </div>
                             <div class="blog__item__text">
                                 <ul>
-                                    <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                    <li><i class="fa fa-comment-o"></i> 5</li>
+                                    <li><i class="fa fa-calendar-o"></i> Febrero 21,2020</li>
+                                    <li><i class="fa fa-comment-o"></i> 1</li>
                                 </ul>
-                                <h5><Link to="/">6 ways to prepare breakfast for 30</Link></h5>
-                                <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                                <h5><Link to="/">Gran cosecha antes de los 6 meses</Link></h5>
+                                <p>La amargura de este cafe es impresionante, solo para conocedores. </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="blog__item">
                             <div class="blog__item__pic">
-                                <img src="assets/img/blog/blog-3.jpg" alt="" />
+                                <img src="assets/img/imcafe/cc-6.jpg" alt="" />
                             </div>
                             <div class="blog__item__text">
                                 <ul>
-                                    <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                    <li><i class="fa fa-comment-o"></i> 5</li>
+                                    <li><i class="fa fa-calendar-o"></i> Octubre 15,2021</li>
+                                    <li><i class="fa fa-comment-o"></i> 3</li>
                                 </ul>
-                                <h5><Link to="/">Visit the clean farm in the US</Link></h5>
-                                <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                                <h5><Link to="/">¿Tostado o al natural?</Link></h5>
+                                <p>Nadie se imagina que su nueva presentacion tiene mas de 1 solo secreto. </p>
                             </div>
                         </div>
                     </div>
