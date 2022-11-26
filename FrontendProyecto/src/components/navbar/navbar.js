@@ -37,10 +37,10 @@ export default class Menu extends React.Component {
             <DropdownButton id="dropdown-basic-button" title="Usuario">
               <Dropdown.Header id="dropdown-header">
                 <Row>
-                  <FontAwesomeIcon icon={faUserNinja} />
+                  <FontAwesomeIcon icon={faUserNinja} color=""/>
                 </Row>
                 <Row>
-                  #USUARIO#
+                  ADMIN
                 </Row>
                                   
               </Dropdown.Header>
